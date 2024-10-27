@@ -150,7 +150,7 @@ const Footer =()=>{
             <p>Github - Virumons</p>
             
           </div>
-          <div className='flex flex-col p-4 sm:px-[1rem]'>
+          {/* <div className='flex flex-col p-4 sm:px-[1rem]'>
             <h1>Links--</h1>
             <NavLink
             to="/about"
@@ -163,7 +163,7 @@ const Footer =()=>{
             isPending ? "pending" : isActive ? "Active" : "p-[10px] text-[#7c7c7c] text-[20px] hover:text-[#ededed]"
           }
             >Contact</NavLink>
-          </div>
+          </div> */}
         </div>
 
         <div className='flex flex-row justify-center items-center px-[1rem]'>
@@ -177,7 +177,7 @@ const Footer =()=>{
               <img src={insta}  className='h-[50px] mx-[10px]'></img>
             </Link>
 
-            <Link to="https://www.behance.net/gallery/178072141/Foody-A-Food-Delivery-Application-%28UIUX%29">
+            <Link to="https://www.behance.net/virajkulkarni1">
               <img src={be}  className='h-[50px] mx-[10px]'></img>
             </Link>
           </div>
