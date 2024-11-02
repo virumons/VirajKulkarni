@@ -56,16 +56,16 @@ const HeroSec =()=>{
   };
   return(
     <>
-     <div id='main' className='h-[100vh] bg-[#111111] flex flex-row justify-center items-center'>
+     <div id='main' className='h-[120vh] sm:h-[100vh] bg-[#111111] flex flex-row justify-center items-center'>
       <div className='flex flex-row justify-center items-center  navbar pt-2 '> 
       {/* sticky top-0 */}
-        <NavLink to='/'> <img src={logo} className='h-[56px] my-[10px]'></img></NavLink>
-        <div className='flex flex-row justify-center content-center  bg-[#8e8e8e45] text-white px-4 py-[10px] m-2 rounded-full ' >
+        <NavLink to='/'> <img src={logo} className='h-[40px] sm:h-[56px] sm:my-[10px]'></img></NavLink>
 
+        <div className='flex flex-row justify-center content-center  bg-[#8e8e8e45] text-white px-2 py-2 sm:px-4 sm:py-[10px] sm:m-2  rounded-full ' >
 
       <Link to="/"
         onClick={() => handleLinkClick("Work")}
-        className={`px-8 py-2 rounded-full text-[18px] ${
+        className={`px-3 sm:px-8 py-2 sm:py-2 rounded-full sm:text-[18px] ${
           activeLink === "Work" ? "bg-[#BCFEE4] text-black" : "bg-[#8e8e8e45] text-white"
         }`}
       >
@@ -75,7 +75,7 @@ const HeroSec =()=>{
       {/* About Me Link */}
       <Link to="/about"
         onClick={() => handleLinkClick("About Me")}
-        className={`px-8 py-2 rounded-full text-[18px] ${
+        className={`px-3 sm:px-8 py-2 sm:py-2 rounded-full text-[18px] ${
           activeLink === "About Me" ? "bg-[#BCFEE4] text-black" : "bg-transparent hover:text-[#BCFEE4] text-white"
         }`}
       >
@@ -102,9 +102,9 @@ const Heroposter = () => {
     <div className='px-3 bg-[#111111] flex flex-col'>
       {/* <Link className='text-white text-right py-2 sm:pr-8'>Resume</Link> */}
     <div className='bg-[#111111] h-[70vh] flex flex-col justify-end px-3 py-3 border-b-2 border-[#909090] '>
-      <p className='bg-[#d1d1d119] w-[fit-content] px-8 py-2 text-slate-300 rounded-full'>Build that helps</p>
-      <h1 className='text-8xl text-white'>I craft Design in every</h1>
-      <h1 className='displaytxt text-6xl py-3 text-[#c0c0c0]'>Possible manner</h1>
+      <p className='bg-[#d1d1d119] w-[fit-content] px-8 py-2 text-sm sm:text-2xl text-slate-300 rounded-full'>Build that helps</p>
+      <h1 className='text-4xl sm:text-8xl text-white'>I craft Design in every</h1>
+      <h1 className='displaytxt text-2xl sm:text-6xl py-3 text-[#c0c0c0]'>Possible manner</h1>
     </div>
     </div>
   )
@@ -115,11 +115,11 @@ const Work = () => {
   return (
     <div className='bg-[#111111] text-white px-4 py-[5rem] '>
       <div>
-        <h1 className='text-8xl'>Work</h1>
+        <h1 className='text-5xl sm:text-8xl'>Work</h1>
         
         <div className='mt-[2rem] pl-2 h-[30vh]'>
         <p className=' w-[fit-content] text-slate-300 '>Freelancer | Designer | Dev</p>
-          <h1 className='text-4xl pt-4 text-[#b7b7b7]'>Everything needs to build the webApp</h1>
+          <h1 className='text-2xl sm:text-4xl pt-4 text-[#b7b7b7]'>Everything needs to build the webApp</h1>
           <p className='displaytxt text-3xl text-[#BCFEE4]'>I'll Help craft it.</p>
         </div>
 
@@ -160,7 +160,7 @@ const Work = () => {
           <div>
             <img src={work1} ></img>
           </div>
-          <div className='w-[400px] flex-col justify-center'>
+          <div className='sm:w-[380px] flex-col justify-center'>
             <p className='text-[#909090] my-[20px] px-2 sm:my-0 sm:px-0 text-left'> <span className='text-[#BCFEE4]'>create-react-tailwindcss</span> is an NPM project that simplifies the process of setting up a React project with Tailwind CSS. With just one command, it initializes the necessary configuration, allowing programmers to concentrate on developing their logic instead of dealing with dependency setups.</p>
           
             <div className='flex flex-row  items-center'>
@@ -184,7 +184,7 @@ const Work = () => {
           <div>
             <img src={Getalgo} className='hover:scale-105 transition-all duration-300 mb-5 sm:mb-0' ></img>
           </div>
-          <div className='w-[400px] flex-col justify-center'>
+          <div className='sm:w-[380px] flex-col justify-center'>
             <p className='text-[#909090]'><span className='text-[#BCFEE4]'>Getalgo</span>  Developed a website designed to help students learn algorithms more effectively. 
             The website includes interactive tutorials, practice problems, and quizzes to reinforce students' understanding of key concepts.</p>
             <div className='flex flex-row  items-center'>
@@ -202,7 +202,7 @@ const Work = () => {
             <img src={qoute}></img>
             <h1 className='text-2xl'>03</h1>
           </div>
-          <div className='w-[400px] flex-col justify-center'>
+          <div className='w-[sm:380px] flex-col justify-center'>
             <p className='text-[#909090]'> <span className='text-[#BCFEE4]'>Motive</span>  is a Chrome extension that provides users with slokas from the Bhagavad Gita, along with their meanings. The goal is to help individuals learn one sloka daily, whether at work or in any other field, and to gain insight from it.</p>
             <div className='flex flex-row  items-center'>
         
@@ -225,7 +225,7 @@ const Work = () => {
           <div>
             <img src={fileit}  className='hover:scale-105 transition-all duration-300'></img>
           </div>
-          <div className='w-[400px] flex-col justify-center mt-5 sm:mt-0'>
+          <div className='sm:w-[380px] flex-col justify-center mt-5 sm:mt-0'>
             <p className='text-[#909090]'> <span className='text-[#BCFEE4]'>Fileit</span>  is the decentralized storage based file sharing system where user can share file which is secure and safe.</p>
             <div className='flex flex-row  items-center'>
             <h1 className='text-[#efa2a2]'>Not Deployed :( </h1> 
@@ -240,7 +240,7 @@ const Work = () => {
           </div>
        
         
-          <div className='w-[400px] flex-col justify-center'>
+          <div className='sm:w-[380px] flex-col justify-center'>
             <p className='text-[#909090]'> <span className='text-[#BCFEE4]'>Insignia</span> - Built College Fest website for students to register with events for insignia we successfully managed 2000-3000 registrations from our website.</p>
             <div className='flex flex-row  items-center'>
             <Link to="https://www.sdmcetinsigniafest.com/" >
